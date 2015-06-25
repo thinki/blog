@@ -57,7 +57,7 @@ readl(&_regs->cfg);
 
 ##添加patch
 关于如何提交patch，内核中有专门的文档讲这个，位置是./doc/Documentation/SubmittingPatches，目前对我最有用的是
-####Describe your changes
+###Describe your changes
 Describe user-visible impact.  Straight up crashes and lockups are
 pretty convincing, but not all bugs are that blatant.  Even if the
 problem was spotted during code review, describe the impact you think
@@ -76,7 +76,7 @@ memory, and readability; or, when it comes to heuristics, between
 different workloads.  Describe the expected downsides of your
 optimization so that the reviewer can weigh costs against benefits.
 
-####Seperate your changes
+###Seperate your changes
 Separate each _logical change_ into a separate patch.
 
 For example, if your changes include both bug fixes and performance
@@ -85,6 +85,6 @@ or more patches.  If your changes include an API update, and a new
 driver which uses that new API, separate those into two patches.
 
 ##关于如何选择开源的库
-这个问题也是我看了free electrons的training material才知道的，主要的思路就是看它的contributions，对各个平台的支持，有时候看看sourceforge上的下载量也能反映一些问题
+这个问题也是我看了free electrons的[training material](http://free-electrons.com/docs/)才知道的，主要的思路就是看它的contributions，对各个平台的支持，有时候看看sourceforge上的下载量也能反映一些问题
 
 
