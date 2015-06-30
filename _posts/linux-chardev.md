@@ -9,6 +9,11 @@ tags: 字符设备
 很多资料都不推荐通过ioctl来控制设备，虽然至今我还没有明白这是为什么，不过好歹我知道可以用sysfs做一些简单的控制。
 这里引用内核文档的内容/linux/Documentation/ioctl/ioctl-number.txt，If you are adding new ioctl's to the kernel, you should use the _IO macros defined in <linux/ioctl.h>，其他的注意事项也很详细的写在里面，虽然上面的很多ioctl号有很久没有更新了。
 
+##void指针
+driver常常需要操作寄存器，一次不经意间把int *指针的递增与void *的递增混淆了，我误认为int *指针递增1实际地址也是递增1，这是非常严重的错误，还好后来发现了囧
+
+[在ANSIC标准中，不允许对void指针进行算术运算如pvoid++或pvoid+=1等，而在GNU中则允许，因为在缺省情况下，GNU认为void *与char *一样。sizeof(*pvoid)==sizeof(char)](http://blog.csdn.net/geekcome/article/details/6249151)
+
 ##内核与用户空间传递参数
 ###大小端
 考虑到不同平台的可移植性，可以预先定义好传递的规则，比如用户空间强制把数据转换成大端，然后内核再强制把大端转换成自己体系结构的大小端：
