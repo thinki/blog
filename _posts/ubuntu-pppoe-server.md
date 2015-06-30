@@ -29,6 +29,7 @@ sudo vim /etc/ppp/pppoe-server-options
 ```
 ```bash
 require-chap
+#login
 lcp-echo-interval 10
 lcp-echo-failure 2
 ms-dns 8.8.8.8  #dns需要修改，国内开源dns已被封
