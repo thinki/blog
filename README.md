@@ -1,3 +1,8 @@
-## Jim's blog repository
+# About Me
 
-This is blog's plain text version written by markdown
+Cloud Networking Engineer
+
+- DPDK Developer, Packet Processing
+
+- Linux Kernel Developer
+- Network I/O Virtualization. 
