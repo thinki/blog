@@ -12,4 +12,5 @@
     * [Dump function call trace in linux kernel/user](Cloud/dump_function_call.md)
     * [Lock Free Programming](Cloud/lock_free_programming.md)
     * [Meson build guide for local installed library](Cloud/meson_build_for_local_lib.md)
+    * [CPU memory order summary](Cloud/cpu_memory_order_summary.md)
 
