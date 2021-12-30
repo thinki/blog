@@ -868,7 +868,7 @@ mm/memory.c
 
 For the memory allocated by qemu/host process, it is anonymous mmap. Otherwise, this memory may be backed by fd(e.g. file backend or mmio backend)
 
-```
+```c
 3482 static vm_fault_t do_anonymous_page(struct vm_fault *vmf)
 3483 {
 ...
@@ -884,7 +884,7 @@ mm/memory.c
 
 Finally, we go to the place to allocate a real page frame by buddy system
 
-```
+```c
 193 static inline struct page *
 194 alloc_zeroed_user_highpage_movable(struct vm_area_struct *vma,
 195 ▸       ▸       ▸       ▸       ▸       unsigned long vaddr)
