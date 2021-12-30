@@ -13,4 +13,6 @@
     * [Lock Free Programming](Cloud/lock_free_programming.md)
     * [Meson build guide for local installed library](Cloud/meson_build_for_local_lib.md)
     * [CPU memory order summary](Cloud/cpu_memory_order_summary.md)
+    * [How Qemu/KVM manage VM memory: Part1 system ram](Cloud/How_qemu_kvm_manage_mem_part1.md)
+    * [How Qemu/KVM manage VM memory: Part2 mmio](Cloud/How_qemu_kvm_manage_mem_part2.md)
 
