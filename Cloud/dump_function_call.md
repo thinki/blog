@@ -51,7 +51,7 @@ use gdb command "bt" at breakpoint, you can see the call stack trace info.
 
 ​    Let's take dpdk testpmd for example, breakpoint is set at virtchnl message handler somewhere and then "bt" command is used to show call stack info as below:
 
-<img src="/images/dump_func_02.png" alt="dump_func_02"  />
+![dump_func_02](/images/dump_func_02.png)
 
 ## 4.2 backtrace
 
